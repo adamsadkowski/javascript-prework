@@ -1,4 +1,4 @@
-var computerMove, playerMove, playerMove2, randomNumber;
+var computerMove, randomNumber;
 randomNumber = Math.floor(Math.random() * 3 + 1);
 console.log('wylosowana liczba to: ' + randomNumber);
 if (randomNumber == '1') {
@@ -6,16 +6,20 @@ if (randomNumber == '1') {
 } else {
   computerMove = 'nieznany ruch';
 }
+printMessage('Mój ruch: ' + computerMove);
+randomNumber = Math.floor(Math.random() * 3 + 1);
+console.log('wylosowana liczba to: ' + randomNumber);
 if (randomNumber == '2') {
-  playerMove = 'papier';
+  computerMove = 'papier';
 } else {
-  playerMove = 'nieznany ruch';
-}
-if (randomNumber == '3') {
-  playerMove2 = 'nożyce';
-} else {
-  playerMove2 = 'nieznany ruch';
+  computerMove = 'nieznany ruch';
 }
 printMessage('Mój ruch: ' + computerMove);
-printMessage('Mój ruch: ' + playerMove);
-printMessage('Mój ruch: ' + playerMove2);
+randomNumber = Math.floor(Math.random() * 3 + 1);
+console.log('wylosowana liczba to: ' + randomNumber);
+if (randomNumber == '3') {
+  computerMove = 'nożyce';
+} else {
+  computerMove = 'nieznany ruch';
+}
+printMessage('Mój ruch: ' + computerMove);
