@@ -6,7 +6,7 @@ var argButtonName, button_paper, button_rock, button_scissors, buttonTest;
 function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
-  var argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber;
+  var computerMove, playerMove, randomNumber;
 /**
 * Describe this function...
 */
@@ -44,20 +44,17 @@ return 'Wygrywasz!';
 } else {
 return 'Przegrywasz!';
 }
-printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 }
+
 playerMove = buttonName;
-console.log('wybór ruchu gracza to: ' + playerInput);
-playerMove = buttonName;
-console.log('ruch gracza to: ' + playerMove);
+console.log('wybór ruchu gracza to: ' + playerMove);
+
 randomNumber = Math.floor(Math.random() * 3 + 1);
 console.log('wylosowana liczba to: ' + randomNumber);
 computerMove = getMoveName(randomNumber);
 console.log('ruch komputera to: ' + computerMove);
 printMessage(displayResult(playerMove, computerMove));
 }
-buttonTest = document.getElementById('button-test');
-buttonTest.addEventListener('click', function(){ buttonClicked('Guzik TEST'); });
 button_rock = document.getElementById('button-rock');
 button_rock.addEventListener('click', function(){ buttonClicked('Kamień'); });
 button_paper = document.getElementById('button-paper');
