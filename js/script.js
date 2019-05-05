@@ -1,4 +1,6 @@
-var argButtonName, button_paper, button_rock, button_scissors, buttonTest;
+'use strict'
+
+let buttonName, argButtonName, button_paper, button_rock, button_scissors;
 
 /**
  * Describe this function...
@@ -6,7 +8,7 @@ var argButtonName, button_paper, button_rock, button_scissors, buttonTest;
 function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
-  var computerMove, playerMove, randomNumber;
+  let computerMove, playerMove, randomNumber;
 /**
 * Describe this function...
 */
