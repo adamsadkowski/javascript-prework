@@ -2,7 +2,6 @@
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
 
-
   function getMoveName(argMoveId) {
   console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
   if (argMoveId == 2) {
@@ -15,7 +14,6 @@
   return 'kamień';
   }
   }
-
 
   function displayResult(argPlayerMove, argComputerMove) {  
   console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
@@ -42,12 +40,14 @@
   }
   }
 
-  let computerMove, randomNumber
   console.log('wybór ruchu gracza to: ' + argButtonName);
-  randomNumber = Math.floor(Math.random() * 3 + 1);
-  console.log('wylosowana liczba to: ' + randomNumber);
+  
+  let randomNumber = Math.floor(Math.random() * 3 + 1);
+  console.log('wylosowana liczba to: ' + randomNumber),
+  
   computerMove = getMoveName(randomNumber);
   console.log('ruch komputera to: ' + computerMove);
+  
   printMessage(displayResult(argButtonName, computerMove));
   }
 
