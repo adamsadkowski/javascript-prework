@@ -42,7 +42,7 @@
 
   console.log('wybór ruchu gracza to: ' + argButtonName);
   
-  let randomNumber = Math.floor(Math.random() * 3 + 1);
+  randomNumber = Math.floor(Math.random() * 3 + 1);
   console.log('wylosowana liczba to: ' + randomNumber),
   
   computerMove = getMoveName(randomNumber);
@@ -50,7 +50,6 @@
   
   printMessage(displayResult(argButtonName, computerMove));
   }
-
 
   button_rock = document.getElementById('button-rock');
   button_rock.addEventListener('click', function(){ buttonClicked('kamień'); });
