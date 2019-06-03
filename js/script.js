@@ -2,6 +2,8 @@
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
 
+  let computerMove, randomNumber
+
   function getMoveName(argMoveId) {
   console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
   if (argMoveId == 2) {
